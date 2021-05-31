@@ -1,0 +1,56 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+</head>
+<body>
+
+    <h1 style="margin-left: 550px;">My Resume</h1>
+
+    <h3><b>Name:</b>{{resume.name}}</h3>
+    <h4><b>Designation:</b>{{resume.designation}}</h4>
+    <h4><b>Phone:</b>{{resume.phoneno}}</h4>
+    <h4><b>Email-id:</b>{{resume.emailid}}</h4>
+    <p><h4><b>Summary:</b>{{resume.summary}}</h4></p>
+    <hr>
+
+    <h4><b>Skills:</b>{{resume.skills}}</h4>
+    <hr>
+
+    <h4><b>Job Role:</b>{{resume.designation}}</h4>
+    <ul>
+        <li><b>Job Description:</b>{{resume.jobdescription}}</li><br>
+        <li><b>Years of Experience:</b>{{resume.yearsofexperience}}</li>
+    </ul>
+    <hr>
+
+    <p><b><h4>Education</h4></b></p>
+
+    <ul>
+        <li><b>School:</b>{{resume.schoolname}}</li>
+        <li><b>School Duration:</b>{{resume.schoolduration}}</li>
+    </ul>
+
+    <ul>
+        <li><b>College:</b>{{resume.collegename}}</li>
+        <li><b>college Duration:</b>{{resume.collegeduration}}</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>

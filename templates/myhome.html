@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" align="center" style="margin-top: 130px;">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <th><h3>NAME</h3></th>
+                <th><h3>VIEW RESUME</h3></th>
+                <th><h3>DOWNLOAD</h3></th>
+              
+            </thead>
+            {% for i in resume %}
+            <tr>
+                <td><h4>{{i.name}}</h4></td>
+                <td><h4><a href="/resume/{{i.id}}" class="btn btn-outline-primary">View Resume</a></h4></td>
+                <td><h4><a href="/{{i.id}}" class="btn btn-outline-success">Download Resume</a></h4></td>
+               
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h4><a href="/name" class="btn btn-outline-dark">Create New Resume</a></h4>
+
+    </div>
+</body>
+</html>
